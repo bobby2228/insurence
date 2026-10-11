@@ -63,3 +63,50 @@ The model explains approximately **80.69% of the variation** in medical insuranc
 ## Conclusion
 
 This project demonstrates how Linear Regression can be applied to predict medical insurance charges and how evaluation metrics and model coefficients help interpret its performance.
+
+
+
+
+## Machine Learning Model Results
+
+This project implements two machine learning algorithms on the Medical Insurance dataset.
+
+### 1. Linear Regression — Insurance Charges Prediction
+
+**Objective:** Predict medical insurance charges using age, sex, BMI, children, smoking status, and region.
+
+| Evaluation Metric | Result |
+|---|---:|
+| MAE | 4,177.05 |
+| MSE | 35,478,020.68 |
+| RMSE | 5,956.34 |
+| R² Score | 0.8069 |
+
+**Conclusion:** The Linear Regression model explains approximately 80.69% of the variation in insurance charges on the test dataset.
+
+### 2. Logistic Regression — Smoking Status Classification
+
+**Objective:** Predict whether an individual is a smoker or non-smoker using age, sex, BMI, children, region, and insurance charges.
+
+| Evaluation Metric | Result |
+|---|---:|
+| Accuracy | 96.27% |
+| Precision (Smoker) | 92.45% |
+| Recall (Smoker) | 89.09% |
+| F1 Score (Smoker) | 90.74% |
+
+**Confusion Matrix Results:**
+- True Negatives: 209
+- False Positives: 4
+- False Negatives: 6
+- True Positives: 49
+
+**Conclusion:** The Logistic Regression model achieved 96.27% accuracy on the test dataset, correctly classifying 258 out of 268 records. Insurance charges were included as an input feature, so the results should be interpreted in that context.
+
+## Final Project Status
+
+- Data Cleaning and Exploratory Data Analysis — Completed
+- Feature Preprocessing — Completed
+- Linear Regression — Completed
+- Logistic Regression — Completed
+- Model Evaluation and Visualization — Completed
